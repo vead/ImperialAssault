@@ -1,6 +1,7 @@
 package no.jchief.webapp.imperialassault.server;
 
 import static spark.Spark.get;
+import static spark.SparkBase.port;
 import static spark.SparkBase.staticFileLocation;
 
 import java.util.HashMap;
@@ -13,7 +14,7 @@ import spark.template.freemarker.FreeMarkerEngine;
 public class Server {
 	
 	public static void main (String[] args) {
-
+		port(Integer.valueOf(System.getenv("PORT")));
 	    staticFileLocation("/public");
 	    
 		get("/test", (req, res) -> "Yo, there mister web surfer.");
