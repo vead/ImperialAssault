@@ -1,0 +1,80 @@
+body {
+  padding-top: 50px;
+  margin-top: 20px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.panel-primary {
+  margin: 0px;
+}
+
+.panel-heading {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.panel-footing {
+  padding: 0px;
+    margin: 0px;
+}
+
+.col-xs-3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn-default-red {
+  background-color: #ff2429;
+}
+.btn-default-yellow {
+  background-color: #ffff80;
+}
+.btn-default-blue {
+  background-color: #6161e4;
+}
+.btn-default-green {
+  background-color: #4aff4a;
+}
+.btn-default-black {
+  background-color: #3c3c3c;
+}
+.btn-default-white {
+  background-color: #ffffff;
+  border-width: thin;
+  border-color: #000000;
+}
+.btn-default-reset {
+  background-color: #inherit;
+
+  border-width: thin;;
+  border-color: #inherit;
+  /*padding: 4px;*/
+
+}
+.glyphicon-resize-horizontal {
+  top: 5px;
+  font-size: 22px;
+}
+
+.glyphicon-plus {
+  color: #666666;
+  top: 3px;
+  font-size: 14px;
+}
+
+.buttonWrapper{
+  padding: 0px;
+  text-align: center;
+}
+
+.gi-1x{font-size: 1em;}
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+.gi-6x{font-size: 6em;}
+.gi-7x{font-size: 7em;}
+.gi-8x{font-size: 8em;}
