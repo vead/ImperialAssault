@@ -17,11 +17,11 @@ public class Server {
 		port(Integer.valueOf(System.getenv("PORT")));
 	    staticFileLocation("/public");
 	    
-		get("/test", (req, res) -> "Yo, there mister web surfer.");
+		get("/test", (req, res) -> "Hello! Welcome to internet.");
 	    
 	    get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("message", "there is a message");
+            attributes.put("message", "this could be a message");
             
             Encounter encounter = new Encounter();
 

@@ -16,22 +16,22 @@
             <table class="table">
               <tr>
                 <td class="buttonWrapper">
-                  <button type="button" data-diceId="redDice" class="btn btn-default-red">${encounter.attack.numRedDices}</button>
+                  <button type="button" id="diceButton" data-diceId="redDice" class="btn btn-default-red">${encounter.attack.numRedDices}</button>
                 </td>
               </tr>
               <tr>
                 <td class="buttonWrapper">
-                  <button type="button" data-diceId="yellowDice" class="btn btn-default-yellow">${encounter.attack.numYellowDices}</button>
+                  <button type="button" id="diceButton" data-diceId="yellowDice" class="btn btn-default-yellow">${encounter.attack.numYellowDices}</button>
                 </td>
               </tr>
               <tr>
                 <td class="buttonWrapper">
-                  <button type="button" data-diceId="blueDice" class="btn btn-default-blue">${encounter.attack.numBlueDices}</button>
+                  <button type="button" id="diceButton" data-diceId="blueDice" class="btn btn-default-blue">${encounter.attack.numBlueDices}</button>
                 </td>
               </tr>
               <tr>
                 <td class="buttonWrapper">
-                  <button type="button" data-diceId="greenDice" class="btn btn-default-green">${encounter.attack.numGreenDices}</button>
+                  <button type="button" id="diceButton" data-diceId="greenDice" class="btn btn-default-green">${encounter.attack.numGreenDices}</button>
                 </td>
               </tr>
             </table>
@@ -86,7 +86,7 @@
         </div>
         <div class="panel-footer">
           <div class="buttonWrapper">
-            <button type="button" class="btn btn-default-calculate"><span class="glyphicon glyphicon-screenshot gi-2x"></span></button>
+            <button type="button" id="calcButton" class="btn btn-default-calculate"><span class="glyphicon glyphicon-screenshot gi-2x"></span></button>
           </div>
         </div>
       </div>
@@ -128,7 +128,24 @@
   </div>
 </body>
 <script>
-  $(function() {};)
+  $(function() {
+
+    $('button[data-diceId]').on('click', function() {
+      var buttonId = $(this).attr('data-diceId');
+      console.log("clicked a duchey dice id : " + buttonId);
+      console.log("a: " + $('#'+buttonId).value );
+      console.log("b: " + $(this).attr('value') );
+      console.log("c: " + $(this) );
+      console.log("d: " + $(this).value );
+      // document.getE
+      // $('#'+buttonId).toggle();
+    });
+
+    $('#calcButton').on('click', function() {
+      $('#resultPanel').fadeOut(2000);
+    });
+
+  });
 </script>
 
 </html>
